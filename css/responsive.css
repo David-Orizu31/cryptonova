@@ -1,0 +1,106 @@
+@media (max-width:480px) {
+    .banner-area h1 {
+        font-size: 40px;
+    }
+    
+    .banner-area p {
+        font-size: 16px;
+        line-height: 1.7em;
+    }
+
+    .history-area p {
+        font-size: 15px;
+    }
+
+    .offer-card {
+        min-height: auto;
+    }
+}
+
+@media (max-width:992px) {
+    .navbar .navbar-collapse {
+        background: #282a2c;
+    }
+
+    .navbar .navbar-nav .nav-item .nav-link {
+        color: white;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid white;
+        font-size: 15px;
+    }
+
+    .navbar .navbar-nav .nav-item .nav-link:hover {
+        color: #f39406;
+    }
+    
+    .navbar .navbar-nav .nav-item .nav-link.active {
+        color: #f39406;
+    }
+
+    .goog-te-combo{
+       text-align: center;
+       color: white;
+    }
+
+    .goog-te-combo:focus {
+        box-shadow: none !important;
+        border: none !important;
+        border-radius: 0px !important;
+    }
+
+    .working-content {
+        height: auto;
+    }
+
+    .working-content .center {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .working-content .center .center-area {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+        height: 200px;
+    }
+
+    .working-content .top-left {
+        position: relative;
+        margin-top: 20px;
+    }
+
+    .working-content .top-right {
+        position: relative;
+        margin-top: 20px;
+    }
+
+    .working-content .bottom-left {
+        position: relative;
+        margin-top: 20px;
+    }
+
+    .working-content .bottom-right {
+        position: relative;
+        visibility: visible;
+        margin-top: 20px;
+    }
+
+    .working-content .content {
+        width: 100% !important;
+    }
+
+    .working-content .arrow {
+        display: none;
+    }
+
+    .working-content .center .center-area .inner {
+        position: absolute;
+        width: 50px;
+        top: 32%;
+        left: 38%;
+    }
+
+}

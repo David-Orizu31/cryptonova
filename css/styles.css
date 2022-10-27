@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Bree+Serif&family=Inter:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700&family=PT+Serif:wght@400;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500;600;700&family=Titillium+Web:wght@300;400;600;700&family=Viga&display=swap');
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: 'Inter', sans-serif !important;
+}
+
+.text-aboreto {
+    font-family: 'Aboreto', cursive;
+}
+
+.text-bree {
+    font-family: 'Bree Serif', serif;
+}
+
+.text-manrope {
+    font-family: 'Manrope', sans-serif;
+}
+
+.text-ptserif {
+    font-family: 'PT Serif', serif;
+}
+
+.text-robomono {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.text-titillium {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.text-viga {
+    font-family: 'Viga', sans-serif;
+}
+
+.text-raleway {
+    font-family: 'Raleway', sans-serif;
+}
+
+.text-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.font-300 {
+    font-weight: 300;
+}
+
+.font-400 {
+    font-weight: 400;
+}
+
+.font-500 {
+    font-weight: 500;
+}
+
+.font-600 {
+    font-weight: 600;
+}
+
+.font-700 {
+    font-weight: 700;
+}
+
+.text-dblue {
+    color: #282a2c;
+}
+
+.text-orange {
+    color: #f39406;
+}
+
+.text-dark-orange {
+    color: #da7e06;
+}
+
+.text-light-orange {
+    color: #FF9800;
+}
+
+.bg-dblue {
+    background: #282a2c;
+}
+
+.bg-light-dblue {
+    background: #282a2ccc;
+}
+
+.site-header {
+    background: #f39406;
+}
+
+.site-header .links {
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+}
+
+/* .navbar {
+    background: #171f2c;
+    rgb(12, 60, 76)
+} */
+
+.toggle-btn {
+    color: white !important;
+    background: #282a2c !important;
+    font-size: 20px !important;
+}
+
+.logo-area h2 {
+    color: #f39406;
+}
+
+.navbar {
+    background: white;
+    font-family: 'Manrope', sans-serif;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #282a2c;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+    color: #f39406;
+}
+
+.navbar .navbar-nav .nav-item .nav-link.active {
+    color: #f39406;
+}
+
+.goog-te-combo{
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 15px !important;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #f39406;
+    background-color: #282a2c;
+    background-clip: padding-box;
+    border: 1px solid #282a2c;
+    margin-top: 10px;
+    border-radius: 0px !important;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.goog-logo-link {
+   display:none !important;
+}
+
+.goog-te-gadget{
+   color: transparent !important;
+   height: 50px;
+}
+
+    /* progress bar */
+    .slider-progress {
+        width: 100%;
+        height: 3px;
+        background: #eee;
+        max-width: 100%;
+        margin: 0 auto;
+      }
+      .slider-progress .progress {
+        width: 0%;
+        height: 3px;
+        background: #282a2c;
+      }
+
+.home-banner {
+    position: relative;
+}
+
+.home-banner .carousel-arrow {
+    border: 0;
+    background: transparent;
+    display: none !important;
+    height: 50px;
+    width: 45px;
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    transform: translate(0, -50%);
+    outline: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    background: #da7e06;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .home-banner .carousel-arrow.prev:hover {
+    width: 50px;
+    padding-left: 15px;
+  }
+
+  .home-banner .carousel-arrow.next:hover {
+    width: 50px;
+    padding-right: 15px;
+  }
+
+  .home-banner:hover .carousel-arrow {
+     display: block !important;
+  }
+
+  /* Modificação só pra a seta do próximo carousel ficar na direita */
+
+  .home-banner .carousel-arrow.next {
+    right: 0;
+  }
+
+  /* .ban-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    display: none;
+  } */
+
+.banner-1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0.9)) , url(../img/zilla-banner-1.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 500px;
+}
+
+.banner-3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0.9)) , url(../img/zilla-img-1.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 500px;
+}
+
+.banner-area {
+    margin-top: 100px;
+}
+
+.banner-area h1 {
+    font-size: 50px;
+}
+
+.banner-area p {
+    font-size: 18px;
+    line-height: 1.7em;
+}
+
+.btn-trade {
+    color: #f39406 !important;
+    border: 2px solid #f39406 !important;
+    box-shadow: inset 0 0 0 0 #f39406 !important;
+    -webkit-transition: ease-in-out 0.4s !important;
+    -moz-transition: ease-in-out 0.4s !important;
+    transition: ease-in-out 0.4s !important;
+    border-radius: 0px !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.btn-trade:hover {
+    box-shadow: inset 400px 0 0 0 #f39406 !important;
+    color: white !important;
+}
+
+.about-area {
+    background: #f7f1ea;
+}
+
+.orange-bot {
+    width: 50px;
+    height: 4px;
+    background: #f39406;
+}
+
+.history-area {
+    background: #282a2c;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+    box-shadow: inset 0 0 0 0 #ffffff;
+}
+
+.history-area p {
+    color: white;
+}
+
+/* .history-area:hover {
+    box-shadow: inset 0 0 0 50px #ffffff;
+  } */
+
+  .btn-doc {
+    color: white !important;
+    background: #f39406 !important;
+    border: 2px solid #f39406 !important;
+    border-radius: 0px !important;
+    -webkit-transition: ease-in-out 0.4s !important;
+    -moz-transition: ease-in-out 0.4s !important;
+    transition: ease-in-out 0.4s !important;
+    font-family: 'Raleway', sans-serif !important;
+    font-weight: bold !important;
+  }
+
+  .btn-doc:hover {
+    box-shadow: inset 700px 0 0 0 #da7e06 !important;
+    border: 2px solid #da7e06 !important;
+    color: white !important;
+}
+
+/* .offer-area {
+    background: #eee;
+} */
+
+.offer-card {
+    background: #ffffff;
+    border: 2px solid #FF9800;
+    /* box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); */
+    position: relative;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #282a2c;
+    -webkit-transition: ease-out 0.5s;
+    -moz-transition: ease-out 0.5s;
+    transition: ease-out 0.5s;
+    min-height: 210px;
+}
+
+/* .offer-card::after, .offer-card::before {
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: scale(0);
+    transition: all 0.5s ease-in-out 0s;
+    width: 100%;
+    z-index: 3;
+  }
+
+  .offer-card::before {
+    border-bottom: 1px solid #FF9800;
+    border-left: 1px solid #FF9800;
+    transform-origin: 0 100% 0;
+  }
+
+  .offer-card::after {
+    border-right: 1px solid #FF9800;
+    border-top: 1px solid #FF9800;
+    transform-origin: 100% 0 0;
+  }
+
+  .offer-card:hover::after, .offer-card:hover::before {
+    transform: scale(1);
+  } */
+
+  .offer-card:hover {
+    border: 2px solid #282a2c;
+    background: #282a2c;
+    box-shadow: inset 400px 50px 0 0 #282a2c;
+  }
+
+  .offer-card:hover p {
+    color: white;
+  }
+
+
+.offer-card p {
+    font-size: 15px;
+}
+
+.stat-area {
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)), url(../img/bitcoin-traders.jpg) no-repeat center fixed;
+    background-size: cover;
+    min-height: 300px;
+}
+
+.stat-icon {
+    background: #f39406;
+    padding: 15px;
+    border-radius: 50%;
+    width: 90px;
+}
+
+.working-content {
+    width: 100%;
+    height: 500px;
+}
+
+.working-content .center {
+    position: absolute;
+    top: 30%;
+    left: 38%;
+}
+
+.working-content .center .center-area {
+    background: #282a2c;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.working-content .center .center-area .outer {
+    position: absolute;
+    padding: 15px;
+}
+
+.working-content .center .center-area .outer img {
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.working-content .center .center-area .inner {
+    position: absolute;
+    width: 60px;
+    top: 30%;
+    left: 37%;
+}
+
+.working-content .top-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.working-content .top-left .arrow {
+    position: absolute;
+    height: 10px;
+    border-top: 2px solid #FF9800;
+    border-bottom: 2px solid #FF9800;
+    background: #282a2c;
+    width: 365px;
+    top: 100px;
+    transform: rotate(30deg);
+}
+
+.working-content .top-left .content {
+    width: 250px;
+    border-radius: 4px;
+}
+
+.working-content .top-left .content p {
+    font-size: 14px;
+}
+
+.working-content .top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.working-content .top-right .arrow {
+    position: absolute;
+    height: 10px;
+    border-top: 2px solid #FF9800;
+    border-bottom: 2px solid #FF9800;
+    background: #282a2c;
+    width: 365px;
+    top: 100px;
+    right: 0px;
+    margin-right: -20px;
+    transform: rotate(150deg);
+}
+
+.working-content .top-right .content {
+    width: 250px;
+    border-radius: 4px;
+}
+
+.working-content .top-right .content p {
+    font-size: 14px;
+}
+
+.working-content .bottom-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.working-content .bottom-left .arrow {
+    position: absolute;
+    height: 10px;
+    border-top: 2px solid #FF9800;
+    border-bottom: 2px solid #FF9800;
+    background: #282a2c;
+    width: 365px;
+    bottom: 100px;
+    left: 0px;
+    margin-left: -12px;
+    transform: rotate(330deg);
+}
+
+.working-content .bottom-left .content {
+    width: 250px;
+    border-radius: 4px;
+}
+
+.working-content .bottom-left .content p {
+    font-size: 14px;
+}
+
+.working-content .bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.working-content .bottom-right .arrow {
+    position: absolute;
+    height: 10px;
+    border-top: 2px solid #FF9800;
+    border-bottom: 2px solid #FF9800;
+    background: #282a2c;
+    width: 350px;
+    bottom: 100px;
+    right: 0px;
+    margin-right: -15px;
+    transform: rotate(210deg);
+}
+
+.working-content .bottom-right .content {
+    width: 250px;
+    border-radius: 4px;
+}
+
+.working-content .bottom-right .content p {
+    font-size: 14px;
+}
+
+.contact-area {
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../img/zilliqafx-bg-2.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 500px;
+}
+
+.contact-control {
+    border-radius: 0px !important;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-control:focus {
+    box-shadow: none !important;
+    color: #f39406 !important;
+    border: 1px solid #FF9800 !important;
+}
