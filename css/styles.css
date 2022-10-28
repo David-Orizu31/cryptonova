@@ -63,7 +63,15 @@ html, body {
 }
 
 .text-dblue {
-    color: #282a2c;
+    color: #12334F;
+}
+
+.text-light-blue {
+    color: rgb(41, 204, 196);
+}
+
+.text-blue {
+    color: #117B86;
 }
 
 .text-orange {
@@ -79,15 +87,15 @@ html, body {
 }
 
 .bg-dblue {
-    background: #282a2c;
+    background: #12334F;
 }
 
 .bg-light-dblue {
-    background: #282a2ccc;
+    background: #117B86;
 }
 
 .site-header {
-    background: #f39406;
+    background: #12334F;
 }
 
 .site-header .links {
@@ -96,15 +104,34 @@ html, body {
     text-decoration: none;
 }
 
+.site-header .links:hover {
+    color: rgb(41, 204, 196);
+}
+
 /* .navbar {
     background: #171f2c;
     rgb(12, 60, 76)
 } */
 
+/* rgb(41, 204, 196) -light
+#12334F - dark
+ main color */
+/* Other Colors
+#117B86
+#0F7985
+#2A9196
+#43AFAF
+#31999D */
+
 .toggle-btn {
-    color: white !important;
-    background: #282a2c !important;
-    font-size: 20px !important;
+    color: #2A9196 !important;
+    background: transparent !important;
+    font-size: 25px !important;
+    border: none !important;
+}
+
+.toggle-btn:focus {
+    box-shadow: none !important;
 }
 
 .logo-area h2 {
@@ -120,15 +147,43 @@ html, body {
 .navbar .navbar-nav .nav-item .nav-link {
     text-transform: uppercase;
     font-weight: 600;
-    color: #282a2c;
 }
 
 .navbar .navbar-nav .nav-item .nav-link:hover {
-    color: #f39406;
+    color: #117B86;
 }
 
 .navbar .navbar-nav .nav-item .nav-link.active {
-    color: #f39406;
+    color: #117B86;
+}
+
+.nav-drop .drop-menu {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border: 1px solid #43AFAF;
+    border-radius: 0px;
+}
+
+/* .nav-drop:hover .drop-menu {
+    display: block;
+} */
+
+.nav-drop:hover .drop-link span {
+    transform: rotate(180deg);
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-drop .drop-menu li a {
+    color: white;
+    background: #43AFAF;
+}
+
+.nav-drop .drop-menu li {
+    border-bottom: 1px solid white;
+}
+
+.nav-drop .drop-menu li:last-child {
+    border-bottom: none;
 }
 
 .goog-te-combo{
@@ -137,10 +192,10 @@ html, body {
     font-size: 15px !important;
     font-weight: 400;
     line-height: 1.5;
-    color: #f39406;
-    background-color: #282a2c;
+    color: white;
+    background-color: #117B86;
     background-clip: padding-box;
-    border: 1px solid #282a2c;
+    border: 1px solid #117B86;
     margin-top: 10px;
     border-radius: 0px !important;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
@@ -165,7 +220,7 @@ html, body {
       .slider-progress .progress {
         width: 0%;
         height: 3px;
-        background: #282a2c;
+        background: #12334F;
       }
 
 .home-banner {
@@ -186,7 +241,7 @@ html, body {
     cursor: pointer;
     color: white;
     font-size: 20px;
-    background: #da7e06;
+    background: rgb(41, 204, 196);
     transition: all 0.5s ease-in-out;
   }
 
@@ -221,13 +276,13 @@ html, body {
   } */
 
 .banner-1 {
-    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0.9)) , url(../img/zilla-banner-1.jpg) no-repeat center;
+    background: linear-gradient(rgba(10, 116, 110, 0.719),rgba(9, 121, 115, 0.678)) , url(../img/zilla-banner-1.jpg) no-repeat center;
     background-size: cover;
     min-height: 500px;
 }
 
 .banner-3 {
-    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0.9)) , url(../img/zilla-img-1.jpg) no-repeat center;
+    background: linear-gradient(rgba(10, 116, 110, 0.719),rgba(9, 121, 115, 0.678)) , url(../img/zilla-img-1.jpg) no-repeat center;
     background-size: cover;
     min-height: 500px;
 }
@@ -238,6 +293,7 @@ html, body {
 
 .banner-area h1 {
     font-size: 50px;
+    color: white;
 }
 
 .banner-area p {
@@ -246,9 +302,10 @@ html, body {
 }
 
 .btn-trade {
-    color: #f39406 !important;
-    border: 2px solid #f39406 !important;
-    box-shadow: inset 0 0 0 0 #f39406 !important;
+    color: white !important;
+    border: 2px solid #12334F !important;
+    background: #12334F !important;
+    box-shadow: inset 0 0 0 0 #12334F !important;
     -webkit-transition: ease-in-out 0.4s !important;
     -moz-transition: ease-in-out 0.4s !important;
     transition: ease-in-out 0.4s !important;
@@ -257,22 +314,30 @@ html, body {
 }
 
 .btn-trade:hover {
-    box-shadow: inset 400px 0 0 0 #f39406 !important;
-    color: white !important;
+    box-shadow: inset 400px 0 0 0 white !important;
+    color: #12334F !important;
+    background: white !important;
+    border: 2px solid white !important;
 }
 
 .about-area {
-    background: #f7f1ea;
+    background-color: rgba(41,204,196,0.1);
 }
 
 .orange-bot {
     width: 50px;
     height: 4px;
-    background: #f39406;
+    background: #117B86;
+}
+
+.lblue-bot {
+    width: 50px;
+    height: 4px;
+    background: #43AFAF;
 }
 
 .history-area {
-    background: #282a2c;
+    background: #12334F;
     -webkit-transition: ease-out 0.4s;
     -moz-transition: ease-out 0.4s;
     transition: ease-out 0.4s;
@@ -289,8 +354,8 @@ html, body {
 
   .btn-doc {
     color: white !important;
-    background: #f39406 !important;
-    border: 2px solid #f39406 !important;
+    background: #43AFAF !important;
+    border: 2px solid #43AFAF !important;
     border-radius: 0px !important;
     -webkit-transition: ease-in-out 0.4s !important;
     -moz-transition: ease-in-out 0.4s !important;
@@ -300,8 +365,8 @@ html, body {
   }
 
   .btn-doc:hover {
-    box-shadow: inset 700px 0 0 0 #da7e06 !important;
-    border: 2px solid #da7e06 !important;
+    box-shadow: inset 700px 0 0 0 #2A9196 !important;
+    border: 2px solid #2A9196 !important;
     color: white !important;
 }
 
@@ -310,12 +375,12 @@ html, body {
 } */
 
 .offer-card {
-    background: #ffffff;
-    border: 2px solid #FF9800;
+    background: #0F7985;
+    border: 2px solid #0F7985;
     /* box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); */
     position: relative;
     cursor: pointer;
-    box-shadow: inset 0 0 0 0 #282a2c;
+    box-shadow: inset 0 0 0 0 white;
     -webkit-transition: ease-out 0.5s;
     -moz-transition: ease-out 0.5s;
     transition: ease-out 0.5s;
@@ -351,31 +416,57 @@ html, body {
   } */
 
   .offer-card:hover {
-    border: 2px solid #282a2c;
-    background: #282a2c;
-    box-shadow: inset 400px 50px 0 0 #282a2c;
+    border: 2px solid #0F7985;
+    background: white;
+    box-shadow: inset 400px 50px 0 0 white;
   }
 
   .offer-card:hover p {
-    color: white;
+    color: #0F7985;
   }
+
+  .offer-card:hover h4 {
+    color: #0F7985;
+  }
+
+  .offer-card:hover span {
+    color: #0F7985;
+  }
+
+
+.offer-card h4 {
+    color: white;
+}
+
+.offer-card span {
+    color: white;
+}
 
 
 .offer-card p {
     font-size: 15px;
+    color: whitesmoke;
 }
 
 .stat-area {
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)), url(../img/bitcoin-traders.jpg) no-repeat center fixed;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/bitcoin-traders.jpg) no-repeat center fixed;
     background-size: cover;
     min-height: 300px;
 }
 
 .stat-icon {
-    background: #f39406;
+    background: #43AFAF;
     padding: 15px;
     border-radius: 50%;
     width: 90px;
+}
+
+.stat-content h5 {
+    color: #43AFAF;
+}
+
+.working-content .content h5 {
+    color: #43AFAF;
 }
 
 .working-content {
@@ -390,7 +481,7 @@ html, body {
 }
 
 .working-content .center .center-area {
-    background: #282a2c;
+    background: #117B86;
     width: 220px;
     height: 220px;
     border-radius: 50%;
@@ -434,9 +525,9 @@ html, body {
 .working-content .top-left .arrow {
     position: absolute;
     height: 10px;
-    border-top: 2px solid #FF9800;
-    border-bottom: 2px solid #FF9800;
-    background: #282a2c;
+    border-top: 2px solid #12334F;
+    border-bottom: 2px solid #12334F;
+    background: #12334F;
     width: 365px;
     top: 100px;
     transform: rotate(30deg);
@@ -460,9 +551,9 @@ html, body {
 .working-content .top-right .arrow {
     position: absolute;
     height: 10px;
-    border-top: 2px solid #FF9800;
-    border-bottom: 2px solid #FF9800;
-    background: #282a2c;
+    border-top: 2px solid #12334F;
+    border-bottom: 2px solid #12334F;
+    background: #12334F;
     width: 365px;
     top: 100px;
     right: 0px;
@@ -488,9 +579,9 @@ html, body {
 .working-content .bottom-left .arrow {
     position: absolute;
     height: 10px;
-    border-top: 2px solid #FF9800;
-    border-bottom: 2px solid #FF9800;
-    background: #282a2c;
+    border-top: 2px solid #12334F;
+    border-bottom: 2px solid #12334F;
+    background: #12334F;
     width: 365px;
     bottom: 100px;
     left: 0px;
@@ -516,9 +607,9 @@ html, body {
 .working-content .bottom-right .arrow {
     position: absolute;
     height: 10px;
-    border-top: 2px solid #FF9800;
-    border-bottom: 2px solid #FF9800;
-    background: #282a2c;
+    border-top: 2px solid #12334F;
+    border-bottom: 2px solid #12334F;
+    background: #12334F;
     width: 350px;
     bottom: 100px;
     right: 0px;
@@ -548,6 +639,214 @@ html, body {
 
 .contact-control:focus {
     box-shadow: none !important;
-    color: #f39406 !important;
-    border: 1px solid #FF9800 !important;
+    color: #117B86 !important;
+    border: 1px solid #117B86 !important;
+}
+
+.testi-content {
+    position: relative;
+}
+
+.testi-content .carousel-arrow {
+    border: 0;
+    background: transparent;
+    /* display: none !important; */
+    height: 50px;
+    width: 45px;
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    transform: translate(0, -50%);
+    outline: 0;
+    cursor: pointer;
+  }
+
+  /* .testi-content:hover .carousel-arrow {
+     display: block !important;
+  } */
+  
+  /* Modificação só pra a seta do próximo carousel ficar na direita */
+  
+  .testi-content .carousel-arrow.next {
+    right: 0;
+    margin-right: 15px;
+  }
+
+  .myslider-dots {
+    list-style: none;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .myslider-dots li {
+    display: inline-block;
+    margin: 0 3px;
+  }
+  
+  .myslider-dots li > button {
+    width: 20px;
+    height: 4px;
+    border: none;
+    background: #43AFAF;
+    color: transparent;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .myslider-dots li.slick-active > button {
+    background: #12334F;
+  }
+
+  .img-testimonial {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+
+  .test-quote p {
+    font-size: 18px;
+  }
+
+  .start-trading {
+    background: linear-gradient(rgba(6, 125, 141, 0.719),rgba(3, 99, 112, 0.719)), url(../img/zilliqafx-bg-4.jpg) no-repeat center fixed;
+    min-height: 250px;
+    background-size: cover;
+  }
+
+  .footer-area {
+    background: linear-gradient(#232425e7, #232425e7) ,url(../img/zillaqafx-footer-bg.jpg) no-repeat center;
+    min-height: 350px;
+    background-size: cover;
+  }
+
+  .foot-head {
+    color: white;
+  }
+
+  .foot-bot {
+    width: 70px;
+    height: 3px;
+    background: rgb(41, 204, 196);
+}
+
+.foot-text {
+    font-size: 14px;
+}
+
+.foot-list {
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+
+.foot-list li {
+    line-height: 1.8em;
+}
+
+.foot-list li a {
+    color: rgba(255,255,255,.5);
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.4s ease-in-out;
+}
+
+.foot-list li a:hover {
+    color: #43AFAF;
+    margin-left: 3px;
+}
+
+.foot-list li a span {
+    font-size: 12px;
+}
+
+.news-control {
+    background: transparent !important;
+    border: 1px solid rgba(255,255,255,.5) !important;
+    border-radius: 0px !important;
+    color: rgba(255,255,255,.5) !important;
+    font-size: 14px !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.btn-news {
+    color: white !important;
+    background: rgb(41, 204, 196) !important;
+    border-radius: 0px !important;
+    border: 1px solid rgb(41, 204, 196) !important;
+}
+
+.news-control:focus {
+    box-shadow: none !important;
+}
+
+.foot-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.foot-links a:hover {
+    color: rgb(41, 204, 196);
+}
+
+.foot-links a .fa:hover {
+    transform: rotateZ(360deg);
+    -moz-transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+}
+
+.footer-contact {
+    border: 1px solid #43AFAF;
+    box-shadow: inset 0 0 0 0 #43AFAF;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+}
+
+.footer-contact:hover {
+    background: #43AFAF;
+    box-shadow: inset 0 0 0 50px #43AFAF;
+}
+
+.footer-contact:hover .contact-icon {
+   color: white;
+}
+
+.footer-contact:hover .icon-area {
+    border-right: 1px solid white;
+}
+
+.footer-contact:hover .cf-info {
+    color: white;
+}
+
+.footer-contact .contact-icon {
+    color: #43AFAF;
+}
+
+.icon-area {
+    border-right: 1px solid #43AFAF;
+    height: 100%;
+}
+
+.cf-head {
+    color: white;
+    font-size: 18px;
+}
+
+.cf-info {
+    color: rgba(255,255,255,.5);
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.copyright-area {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.copyright-area span {
+    font-size: 13px;
+    color: white;
 }

@@ -18,34 +18,49 @@
 }
 
 @media (max-width:992px) {
-    .navbar .navbar-collapse {
-        background: #282a2c;
-    }
+    /* .navbar .navbar-collapse {
+        background: #2A9196;
+    } */
 
     .navbar .navbar-nav .nav-item .nav-link {
-        color: white;
+        /* color: white; */
         width: 100%;
-        text-align: center;
-        border-bottom: 1px solid white;
+        /* text-align: center; */
+        /* border-bottom: 1px solid #12334F; */
         font-size: 15px;
     }
-
+/* 
     .navbar .navbar-nav .nav-item .nav-link:hover {
-        color: #f39406;
+        color: #12334F;
     }
     
     .navbar .navbar-nav .nav-item .nav-link.active {
-        color: #f39406;
+        color: #12334F;
+    } */
+
+    /* .nav-drop:hover .drop-link drop {
+        display: none;
+    } */
+    
+    .nav-drop:hover .drop-link span {
+        transform: none !important;
+        transition: none !important;
     }
+
+    /* .nav-drop:focus .drop-link span {
+        transform: rotate(180deg);
+        transition: all 0.2s ease-in-out;
+    } */
 
     .goog-te-combo{
        text-align: center;
-       color: white;
+       color: #12334F;
+       background-color: white !important;
+       border: 1px solid #12334F !important;
     }
 
     .goog-te-combo:focus {
         box-shadow: none !important;
-        border: none !important;
         border-radius: 0px !important;
     }
 
