@@ -52,6 +52,14 @@
         transition: all 0.2s ease-in-out;
     } */
 
+    .nav-drop .drop-menu li {
+        border-bottom: 1px solid #43AFAF;
+    }
+
+    .nav-drop .drop-menu {
+        background: #43AFAF;
+    }
+
     .goog-te-combo{
        text-align: center;
        color: #12334F;
