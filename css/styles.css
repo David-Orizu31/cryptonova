@@ -6,6 +6,53 @@ html, body {
     font-family: 'Inter', sans-serif !important;
 }
 
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: #ffffff;
+}
+
+/* Center the loader */
+#loader {
+    position: absolute;
+    left: 44%;
+    top: 40%;
+    z-index: 1;
+    width: 80px;
+    height: 80px;
+    animation: zoom-in-zoom-out 1s ease infinite;
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.2, 1.2);
+      opacity: 0.7;
+    }
+    100% {
+      transform: scale(1, 1);
+      opacity: 0.4;
+    }
+  }
+
+.zilla-modal-head {
+    border-bottom: none !important;
+}
+
+.btn-refer {
+    color: white !important;
+    background: #117B86 !important;
+    border-radius: 0px !important;
+    border: 1px solid #117B86 !important;
+}
+
 .text-aboreto {
     font-family: 'Aboreto', cursive;
 }
@@ -855,4 +902,40 @@ html, body {
 .copyright-area span {
     font-size: 13px;
     color: white;
+}
+
+/* Other Pages */
+.other-banners {
+    background: linear-gradient(rgba(10, 116, 110, 0.719),rgba(9, 121, 115, 0.678)) , url(../img/zilliqafx-bg-3.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 250px;
+}
+
+.white-bot {
+    width: 50px;
+    height: 3px;
+    background: #ffffff;
+}
+
+.accordion-button {
+   background: #117B86 !important;
+   color: white !important;
+   border-radius: 0px !important;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+
+	/* Custom style */
+    .accordion-button::after {
+        background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e") !important;
+        transform: scale(.7) !important;
+      }
+      .accordion-button:not(.collapsed)::after {
+        background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e") !important;
+      }
+
+.contact-card {
+    min-height: 180px !important;
 }

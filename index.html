@@ -23,6 +23,12 @@
 </head>
 <body>
 
+    <div class="se-pre-con">
+      <div id="loader">
+        <img src="img/zilliqa-logo-blue.png" alt="zilliqa-logo-blue" width="100%">
+      </div>
+    </div>
+
     <header class="site-header pb-2 pt-1">
       <div class="container">
         <div class="row">
@@ -49,13 +55,16 @@
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav me-auto mt-lg-0 ms-lg-5">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
+                        <a class="nav-link active" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                      <a class="nav-link" href="faq.html">Faq</a>
+                   </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                     <!-- <li class="nav-item">
                         <a class="nav-link" href="#">Login</a>
@@ -66,8 +75,8 @@
                         Account <span class="la la-angle-down text-dblue float-end float-lg-none" style="font-size: 15px;"></span>
                       </a>
                       <ul class="dropdown-menu drop-menu">
-                        <li><a class="dropdown-item" href="#">Login</a></li>
-                        <li><a class="dropdown-item" href="#">Register</a></li>
+                        <li><a class="dropdown-item" href="login.html">Login</a></li>
+                        <li><a class="dropdown-item" href="register.html">Register</a></li>
                       </ul>
                     </li>
                 </ul>
@@ -588,6 +597,34 @@
     </div>
   </div>
 
+  <div align="center" class="testifier my-3">
+    <div class="col-md-6">
+    <img src="img/zilliqa-testi-4.jpg" alt="zilla-testi-4" class="img-testimonial">
+    <div class="test-quote mt-2">
+      <p>
+        <sup class="me-1"><i class="fa fa-quote-left fa-2x text-blue" aria-hidden="true"></i></sup>
+        <span class="text-raleway font-500">Joining the Refferal Scheme with ZilliqaFx is one of the easiest way I make cool cash. I've referred more than 20 persons which I'm still gaining commissions from.</span>
+      </p>
+    </div>
+    <span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span>
+    <h4 class="text-dblue text-bree mt-2">Roy Clinton</h4>
+  </div>
+</div>
+
+<div align="center" class="testifier my-3">
+  <div class="col-md-6">
+  <img src="img/zilla-testi-5.jpg" alt="zilla-testi-5" class="img-testimonial">
+  <div class="test-quote mt-2">
+    <p>
+      <sup class="me-1"><i class="fa fa-quote-left fa-2x text-blue" aria-hidden="true"></i></sup>
+      <span class="text-raleway font-500">I needed to Invest into cryptocurrency but had low capital. I was refered to ZilliqaFx by a friend and they played a huge role in increasing my capital to a point I never expected.</span>
+    </p>
+  </div>
+  <span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span><span class="fa fa-star text-warning"></span>
+  <h4 class="text-dblue text-bree mt-2">Roxane Williams</h4>
+</div>
+</div>
+
    </div>
 
    </div>
@@ -620,11 +657,12 @@
         <h4 class="foot-head">Navigation</h4>
         <div class="foot-bot"></div>
         <ul class="foot-list mt-2">
-          <li><a href=""><span class="la la-angle-right"></span> Home</a></li>
-          <li><a href=""><span class="la la-angle-right"></span> About</a></li>
-          <li><a href=""><span class="la la-angle-right"></span> Contact</a></li>
-          <li><a href=""><span class="la la-angle-right"></span> Login</a></li>
-          <li><a href=""><span class="la la-angle-right"></span> Register</a></li>
+          <li><a href="index.html"><span class="la la-angle-right"></span> Home</a></li>
+          <li><a href="about.html"><span class="la la-angle-right"></span> About</a></li>
+          <li><a href="faq.html"><span class="la la-angle-right"></span> Faq</a></li>
+          <li><a href="contact.html"><span class="la la-angle-right"></span> Contact</a></li>
+          <li><a href="login.html"><span class="la la-angle-right"></span> Login</a></li>
+          <li><a href="register.html"><span class="la la-angle-right"></span> Register</a></li>
         </ul>
       </div>
 
@@ -717,6 +755,36 @@
   
 </footer>
     
+   
+   <!-- Modal Body -->
+   <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+   <div class="modal" id="homemodal" tabindex="-1"  role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content overflow-hidden">
+        <!-- <div class="modal-header zilla-modal-head">
+          <h5 class="modal-title" id="modalTitleId">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div> -->
+        <div class="modal-body">
+          <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="overflow-hidden">
+          <div class="col-md-9 mx-auto wow tada" data-wow-delay="0s">
+          <img src="img/zilla-refer.jpg" class="img img-fluid" alt="zilla-refer">
+        </div>
+      </div>
+        <div class="text-center">
+          <p class="text-poppins font-500">Join the Affiliate Network and earn certain percentages based on Referral as rewards.</p>
+          <a href="#" class="btn btn-refer text-uppercase btn-lg">Start Now</a>
+        </div>
+        </div>
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save</button>
+        </div> -->
+      </div>
+    </div>
+   </div>
+
     
     <!-- Bootstrap JS -->
     <script src="bootstrap/js/popper.min.js"></script>
@@ -870,5 +938,21 @@ $('.testi-content').slick({
 });
     </script>
     <script src="js/script.js"></script>
+    <!-- Modal Pop Up -->
+    <script>
+      $(document).ready(function() {
+       setTimeout(() => {
+        $('#homemodal').modal('show');
+       }, 3000);
+      });
+    </script>
+    <!-- Preloader JS -->
+    <script src="js/modernizr.js"></script>
+    <script>
+      $(window).load(function() {
+        // Animate loader off screen
+        $(".se-pre-con").fadeOut(700);
+      });
+    </script>
 </body>
 </html>
