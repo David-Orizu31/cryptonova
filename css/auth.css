@@ -1,0 +1,67 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    background: linear-gradient(rgba(10, 91, 116, 0.719),rgba(5, 82, 105, 0.719)) , url(../img/auth-bg.jpg) no-repeat center fixed;
+    background-size: cover;
+    padding-top: 100px;
+}
+
+.auth-card {
+   background: #e7f3f5 !important;
+}
+
+.panel-group .panel-icon {
+  background: #12334F;
+  color: white;
+  border-radius: 0px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.panel-group .panel-icon:hover {
+    color: #12334F;
+    background: white;
+}
+
+.panel-group .panel-control {
+    border-radius: 0px;
+}
+
+.panel-group .panel-control:focus {
+    box-shadow: none;
+    border-color: #117B86;
+}
+
+.btn-auth {
+    color: white !important;
+    background: #117B86 !important;
+    border-radius: 0px !important;
+    border: 1px solid #117B86 !important;
+}
+
+.btn-auth:hover {
+    color: #117B86 !important;
+    background: transparent !important;
+}
+
+.auth-links {
+    color: #12334F;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.auth-links:hover {
+    color: #117B86;
+}
+
+@media (max-width:480px) {
+    .auth-links {
+        font-size: 13px;
+    }
+}
+

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZilliqaFx - Register</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- Line Awesome -->
+    <link rel="stylesheet" href="line-awesome/css/line-awesome.css">
+    <link rel="stylesheet" href="line-awesome/css/line-awesome.min.css">
+    <!-- Font Awesome -->
+    <script src="js/font-awesome.js"></script>
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="slick-1.8.1/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="slick-1.8.1/slick-1.8.1/slick/slick-theme.css">
+</head>
+<body>
+
+    <div class="se-pre-con">
+      <div id="loader">
+        <img src="img/zilliqa-logo-blue.png" alt="zilliqa-logo-blue" width="100%">
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 mx-auto">
+                <div class="card auth-card p-3">
+                    <div class="text-center">
+                    <h2 class="text-bree text-blue">Register</h2>
+                    <p class="text-poppins">Create an Account with ZilliqaFx</p>
+                </div>
+
+                <form action="" method="post">
+                    <div class="input-group panel-group mb-3">
+                        <span class="input-group-text panel-icon" id="basic-addon1"><i class="fa fa-user-o" aria-hidden="true"></i></span>
+                        <input type="text" name="name" class="form-control panel-control text-raleway" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1"  required>
+                    </div>
+
+                    <div class="input-group panel-group mb-3">
+                        <span class="input-group-text panel-icon" id="basic-addon1"><i class="fa fa-user-o" aria-hidden="true"></i></span>
+                        <input type="text" name="username" class="form-control panel-control text-raleway" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"  required>
+                    </div>
+
+                    <div class="input-group panel-group mb-3">
+                        <span class="input-group-text panel-icon" id="basic-addon1"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                        <input type="email" name="email" class="form-control panel-control text-raleway" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1"  required>
+                    </div>
+
+                    <div class="input-group panel-group mb-3">
+                        <span class="input-group-text panel-icon" id="basic-addon1"><i class="fa fa-wallet" aria-hidden="true"></i></span>
+                        <input type="text" name="wallet_address" class="form-control panel-control text-raleway" placeholder="Wallet Address" aria-label="Wallet Address" aria-describedby="basic-addon1"  required>
+                    </div>
+
+                    <div class="input-group panel-group mb-3">
+                        <span class="input-group-text panel-icon" id="basic-addon1"><i class="fa fa-key" aria-hidden="true"></i></span>
+                        <input type="password" name="password" class="form-control panel-control text-raleway" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+                    </div>
+
+                    <div class="input-group panel-group mb-3">
+                        <span class="input-group-text panel-icon" id="basic-addon1"><i class="fa fa-key" aria-hidden="true"></i></span>
+                        <input type="password" name="password_confirmation" class="form-control panel-control text-raleway" placeholder="Confirm Password" aria-label="Confirm Password" aria-describedby="basic-addon1">
+                    </div>
+
+                    <div class="d-grid mb-1">
+                        <button type="submit" class="btn btn-auth font-600">Register</button>
+                    </div>
+
+                     <div class="row mb-1">
+                        <div class="col-6">
+                          <a href="#un" class="auth-links"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
+                        </div>
+                        <div class="col-6 text-end">
+                          <a href="#un" class="auth-links"><i class="fa fa-home" aria-hidden="true"></i> Back to Home</a>
+                        </div>
+                     </div>
+
+                </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Bootstrap JS -->
+        <script src="bootstrap/js/popper.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <!-- Slick Js -->
+        <script src="slick-js/jquery-1.11.0.min.js"></script>
+        <script src="slick-js/jquery-migrate-1.2.1.min.js"></script>
+        <script src="slick-1.8.1/slick-1.8.1/slick/slick.min.js"></script>
+    
+                 <!-- WOW JS -->
+                 <script src="js/wow.js"></script>
+                 <script>
+                                   wow = new WOW(
+                                   {
+                                   boxClass:     'wow',      // default
+                                   animateClass: 'animated', // default
+                                   offset:       0,          // default
+                                   mobile:       true,       // default
+                                   live:         true        // default
+                                 }
+                                 )
+                   wow.init();
+             
+                 </script>    
+    
+        <!-- Jquery Counter Up -->
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/waypoints.min.js"></script>
+        <script src="js/jquery.counterup.min.js"></script>
+        <script>
+          $('.counter').counterUp({
+      delay: 10,
+      time: 3000
+    });
+        </script>
+        <script src="js/script.js"></script>
+        <!-- Preloader JS -->
+        <script src="js/modernizr.js"></script>
+        <script>
+          $(window).load(function() {
+            // Animate loader off screen
+            $(".se-pre-con").fadeOut(700);
+          });
+        </script>
+    </body>
+    </html>
