@@ -1,0 +1,158 @@
+/*================================================================================
+	Item Name: Robust - Responsive Admin Theme
+	Version: 1.0
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&family=Rubik:wght@300;400;500;600;700&display=swap');
+
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: #ffffff;
+}
+
+/* Center the loader */
+#loader {
+    position: absolute;
+    left: 44%;
+    top: 40%;
+    z-index: 1;
+    width: 80px;
+    height: 80px;
+    animation: zoom-in-zoom-out 1s ease infinite;
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.2, 1.2);
+      opacity: 0.7;
+    }
+    100% {
+      transform: scale(1, 1);
+      opacity: 0.4;
+    }
+  }
+
+.dash-header {
+	color: #12334F;
+}
+
+.dash-icon {
+	color: rgb(223, 162, 9);
+}
+
+table .table-header tr{
+	background-color: #12334F;
+	color: white;
+}
+
+table .table-body tr {
+	background-color: rgb(223, 162, 9);
+	color: white;
+}
+
+@media (max-width:480px) {
+	.calc-btn {
+		margin-top: 10px;
+	}
+}
+
+.btn-proceed {
+	background-color: #12334F;
+}
+
+.btn-cancel {
+	background-color: rgba(0,0,0,0.7);
+	margin-left: 20px;
+}
+
+.menu-collapsed .navbar .navbar-wrapper .navbar-header .navbar-nav .nav-item .navbar-brand h3 {
+	width: 35px;
+}
+
+.navbar .navbar-wrapper .navbar-header .navbar-nav .nav-item .navbar-brand h3 {
+	width: 100px;
+}
+
+.dash-p {
+	line-height: 2em;
+}
+
+.total {
+	font-size: 17px;
+}
+
+.total .float {
+	float: right;
+}
+
+.currency-control {
+    width: 100px !important;
+    display: inline-flex !important;
+}
+
+.dash-menu {
+	background: #0F7985 !important;
+}
+
+.main-menu.menu-dark .navigation  {
+	background: #0F7985 !important;
+}
+
+.header-navbar.navbar-semi-dark .navbar-header {
+    background: #0F7985 !important;
+}
+
+body {
+	background: rgba(176, 247, 243, 0.1) !important;
+	font-family: 'Roboto', sans-serif;
+}
+
+.text-roboto {
+	font-family: 'Roboto', sans-serif;
+}
+
+.text-fira {
+	font-family: 'Fira Sans', sans-serif;
+}
+
+.text-rubik {
+	font-family: 'Rubik', sans-serif;
+}
+
+.text-blue {
+	color: #12334F;
+}
+
+.text-light-blue {
+	color: #2A9196;
+}
+
+.main-menu.menu-dark .navigation li a {
+	color: white;
+}
+
+.main-menu.menu-dark .navigation li a:hover {
+	color: white;
+	background: #12334F;
+}
+
+.main-menu.menu-dark .navigation li.active a {
+	color: white;
+	background: #12334F;
+}

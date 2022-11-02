@@ -30,13 +30,32 @@
       </div>
     </div>
 
+    <div id="google_translate_element"></div>
+    <script>
+      function googleTranslateElementInit() {
+          new google.translate.TranslateElement({
+              pageLanguage: 'en',
+              includedLanguages: 'en,fr,es,ru,it,de,vi,th,ja,ko,zh-CN,pt,ar,tr',
+              autoDisplay: false
+          }, 'google_translate_element'
+          );
+      }
+  </script>
+
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+  </script>
+
     <div class="container">
         <div class="row">
             <div class="col-lg-6 mx-auto">
                 <div class="card auth-card p-3">
                     <div class="text-center">
-                    <h2 class="text-bree text-blue">Login</h2>
-                    <p class="text-poppins">Login to your Dashboard</p>
+                    <!-- <h2 class="text-bree text-blue">Login</h2>
+                    <p class="text-poppins">Login to your Dashboard</p> -->
+                    <img src="img/zilliqafx-logo.svg" alt="zilliqafx-logo" width="150px" class="img-zilliqa"><br>
+                    <div class="mt-2"></div>
+                    <a href="javascript:void(0);" class="btn btn-language btn-sm" data-bs-toggle="modal" data-bs-target="#lang-modal"><i class="la la-language" style="font-size: 18px;"></i> Select Language <i class="fa fa-chevron-down" style="font-size: 12px;"></i></a>
+                    <div class="mb-2"></div>
                 </div>
 
                 <form action="" method="post">
@@ -46,8 +65,9 @@
                     </div>
 
                     <div class="input-group panel-group mb-2">
-                        <span class="input-group-text panel-icon" id="basic-addon1"><i class="fa fa-key" aria-hidden="true"></i></span>
-                        <input type="password" name="password" class="form-control panel-control text-raleway" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+                        <span class="input-group-text panel-icon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                        <input type="password" name="password" id="password" class="form-control panel-control text-raleway" placeholder="Password" aria-label="Password">
+                        <span class="input-group-text panel-icon" id="checkpass"><i class="fa fa-eye-slash" aria-hidden="true"></i></span>
                     </div>
 
                     <div class="form-check form-check-inline mb-2">
@@ -74,6 +94,96 @@
             </div>
         </div>
     </div>
+
+    <div class="modal fade skiptranslate" id="lang-modal" data-open-onload="false" tabindex="-1"
+    role="dialog" style="display: none;">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content langmodal-content">
+            <div class="modal-header langmodal-header pt-1 pb-1">
+                <h5 class="modal-title text-white">Languages</h5>
+                <button type="button" class="btn close-lang" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="la la-close" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-lang">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="#" data-lang="en"><span class="lang text-white">
+                                <img src="language/eng.png" style="height: 30px;" />
+                                English</span></a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="#" data-lang="fr"><span class="lang text-white">
+                                <img src="language/fr.png" style="height: 30px;" />
+                                Français</span></a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="#" data-lang="es"><span class="lang text-white">
+                                <img src="language/sp.png" style="height: 30px;" />
+                                Español</span></a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="#" data-lang="ru"><span class="lang text-white">
+                                <img src="language/ru.png" style="height: 30px;" />
+                                русский</span></a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="#" data-lang="it"><span class="lang text-white">
+                                <img src="language/it.png" style="height: 30px;" />
+                                Italiano</span></a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="#" data-lang="de"><span class="lang text-white">
+                                <img src="language/ger.png" style="height: 30px;" />
+                                Deutsch</span></a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="#" data-lang="vi"><span class="lang text-white">
+                                <img src="language/vt.png" style="height: 30px;" />
+                                Tiếng Việt</span></a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="#" data-lang="th"><span class="lang text-white">
+                                <img src="language/th.png" style="height: 30px;" />
+                                ภาษาไทย	</span></a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="#" data-lang="ja"><span class="lang text-white">
+                                <img src="language/jp.png" style="height: 30px;" />
+                                日本語</span></a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="#" data-lang="ko"><span class="lang text-white">
+                                <img src="language/ko.png" style="height: 30px;" />
+                                한국어</span></a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="#" data-lang="zh-CN"><span class="lang text-white">
+                                <img src="language/chi.png" style="height: 30px;" />
+                                "中文(简体)</span></a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="#" data-lang="pt"><span class="lang text-white">
+                                <img src="language/pt.png" style="height: 30px;" />
+                                Português</span></a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="#" data-lang="ar"><span class="lang text-white">
+                                <img src="language/arb.png" style="height: 30px;" />
+                                العربية</span></a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="#" data-lang="tr"><span class="lang text-white">
+                                <img src="language/trk.png" style="height: 30px;" />
+                                Türkçe</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
         <!-- Bootstrap JS -->
         <script src="bootstrap/js/popper.min.js"></script>
@@ -110,6 +220,34 @@
     });
         </script>
         <script src="js/script.js"></script>
+        <!-- Toggle Password -->
+        <script>
+          $('#checkpass').click(function() {
+            $('#checkpass .fa').toggleClass('fa-eye fa-eye-slash');
+             var pass = $('#password').attr('type');
+             if(pass == 'password') {
+                $('#password').attr('type','text');
+             } else {
+                $('#password').attr('type','password');
+             }
+          });
+        </script>
+        <!-- Language Js -->
+        <script src="js/countries.js"></script>
+        <script>
+            const triggerEvent = (element, eventName) => {
+  const event = new Event(eventName);
+  element.dispatchEvent(event);
+};
+                  // Flag click handler
+        $('.modal-lang a').click(function (e) {
+            e.preventDefault();
+            var lang = $(this).data('lang');
+            $('.goog-te-combo').val(lang);
+            triggerEvent(document.querySelector('.goog-te-combo'), 'change');
+            $('#lang-modal').modal('toggle');
+        });
+        </script>
         <!-- Preloader JS -->
         <script src="js/modernizr.js"></script>
         <script>

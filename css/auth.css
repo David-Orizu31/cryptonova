@@ -9,6 +9,7 @@ body {
     background: linear-gradient(rgba(10, 91, 116, 0.719),rgba(5, 82, 105, 0.719)) , url(../img/auth-bg.jpg) no-repeat center fixed;
     background-size: cover;
     padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .auth-card {
@@ -49,6 +50,28 @@ body {
     background: transparent !important;
 }
 
+.btn-cancel {
+    color: white !important;
+    border: 1px solid #117B86 !important;
+    background: #117B86 !important;
+}
+
+.btn-cancel:hover {
+    color: #117B86 !important;
+    background: transparent !important;
+}
+
+.btn-regnow {
+    color: white !important;
+    background: #12334F !important;
+    border: 1px solid #12334F;
+}
+
+.btn-regnow:hover {
+    color: #12334F !important;
+    background: transparent !important;
+}
+
 .auth-links {
     color: #12334F;
     text-decoration: none;
@@ -65,3 +88,69 @@ body {
     }
 }
 
+.btn-language {
+    color: #117B86 !important;
+    background: transparent !important;
+    border: 1px solid #117B86 !important;
+}
+
+#google_translate_element {
+    display: none;
+}
+
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+}
+
+.goog-tooltip {
+    display: none !important;
+}
+
+.goog-text-highlight {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.goog-te-gadget-icon {
+    display: none;
+}
+
+.langmodal-content {
+    background: #0F7985 !important;
+}
+
+.modal-lang {
+    text-align: left;
+}
+
+.close-lang {
+    background: transparent !important;
+    border: none !important;
+    color: white !important;
+    font-size: 25px !important;
+}
+
+.modal-lang a {
+    text-decoration: none;
+}
+
+    .modal-lang .lang {
+        font-size: 20px;
+        line-height: 45px;
+        transition: 350ms ease all;
+    }
+
+        .modal-lang .lang:hover {
+            transform: scale(1.2);
+        }
+
+    .modal-lang .flag-icon {
+        font-size: 1.5625rem;
+        margin: 1.25rem;
+        transition: 350ms ease all;
+    }
+
+        .modal-lang .flag-icon:hover {
+            transform: scale(1.2);
+        }
