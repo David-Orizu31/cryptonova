@@ -139,13 +139,16 @@
       <!-- main menu content-->
       <div class="main-menu-content dash-content">
         <ul id="main-menu-navigation dash-list" data-menu="menu-navigation" class="navigation navigation-main">
-          <li class=" nav-item">
+          <li class="nav-item">
             <a href="index.html"><i class="icon-home3"></i><span data-i18n="nav.dash.main" class="menu-title">Dashboard</span></a>
           </li>
           <li class="nav-item">
-            <a href="deposit.html"><i class="icon-money3"></i><span data-i18n="nav.dash.main" class="menu-title">Make Deposit</span></a>
+            <a href="deposit.html"><i class="icon-money3"></i><span data-i18n="nav.dash.main" class="menu-title">Create Investment</span></a>
           </li>
           <li class="nav-item">
+            <a href="deposit-history.html"><i class="icon-history2"></i><span data-i18n="nav.dash.main" class="menu-title">Deposit History</span></a>
+          </li>
+          <li class="nav-item active">
             <a href="history.html"><i class="icon-history2"></i><span data-i18n="nav.dash.main" class="menu-title">Transaction History</span></a>
           </li>
           <li class="nav-item">
@@ -158,7 +161,7 @@
             <a href="profile.html"><i class="icon-user"></i><span data-i18n="nav.dash.main" class="menu-title">Account Profile</span></a>
           </li>
           <li class="nav-item">
-            <a href="mailto:support@cointxb.com"><i class="icon-commenting-o"></i><span data-i18n="nav.dash.main" class="menu-title">Contact Support</span></a>
+            <a href="mailto:support@zilliqafx.com"><i class="icon-commenting-o"></i><span data-i18n="nav.dash.main" class="menu-title">Contact Support</span></a>
           </li>
           <li class="nav-item">
             <a href="#"><i class="icon-power3"></i><span data-i18n="nav.dash.main" class="menu-title">Logout</span></a>
@@ -178,7 +181,7 @@
         </div>
         <div class="content-body"><!-- stats -->
           <br><br>
-          <h2 class="dash-header">Transaction History</h2>
+          <h2 class="dash-header text-fira">Transaction History</h2>
           <span>View all transactions made on your account so far from this single screen</span>
           <br><br>
           <div class="container">
@@ -186,9 +189,9 @@
               <div class="card">
                   <div class="card-body">
                       <div class="card-block">
-                          <h4>My Transaction History</h4>
+                          <!-- <h4 class="text-light-blue">My Transaction History</h4>
                           <p class="dash-p">Shown Below are ordered list of your transactions so far</p>
-                          <h3 class="dash-header">History</h3>
+                          <h3 class="dash-header">History</h3> -->
 
                           <br>
                           <div class="table-responsive">
@@ -197,11 +200,13 @@
                                       <tr>
                                           <th>Type</th>
                                           <th>Amount</th>
+                                          <th>Status</th>
                                           <th>Date</th>
                                       </tr>
                                   </thead>
                                   <tbody>
                                       <tr>
+                                          <td></td>
                                           <td></td>
                                           <td></td>
                                           <td></td>

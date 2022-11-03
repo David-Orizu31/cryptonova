@@ -139,11 +139,14 @@
       <!-- main menu content-->
       <div class="main-menu-content dash-content">
         <ul id="main-menu-navigation dash-list" data-menu="menu-navigation" class="navigation navigation-main">
-          <li class=" nav-item">
+          <li class="nav-item">
             <a href="index.html"><i class="icon-home3"></i><span data-i18n="nav.dash.main" class="menu-title">Dashboard</span></a>
           </li>
           <li class="nav-item">
-            <a href="deposit.html"><i class="icon-money3"></i><span data-i18n="nav.dash.main" class="menu-title">Make Deposit</span></a>
+            <a href="deposit.html"><i class="icon-money3"></i><span data-i18n="nav.dash.main" class="menu-title">Create Investment</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="deposit-history.html"><i class="icon-history2"></i><span data-i18n="nav.dash.main" class="menu-title">Deposit History</span></a>
           </li>
           <li class="nav-item">
             <a href="history.html"><i class="icon-history2"></i><span data-i18n="nav.dash.main" class="menu-title">Transaction History</span></a>
@@ -154,11 +157,11 @@
           <li class="nav-item">
             <a href="referral.html"><i class="icon-users2"></i><span data-i18n="nav.dash.main" class="menu-title">My Referrals</span></a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a href="profile.html"><i class="icon-user"></i><span data-i18n="nav.dash.main" class="menu-title">Account Profile</span></a>
           </li>
           <li class="nav-item">
-            <a href="mailto:support@cointxb.com"><i class="icon-commenting-o"></i><span data-i18n="nav.dash.main" class="menu-title">Contact Support</span></a>
+            <a href="mailto:support@zilliqafx.com"><i class="icon-commenting-o"></i><span data-i18n="nav.dash.main" class="menu-title">Contact Support</span></a>
           </li>
           <li class="nav-item">
             <a href="#"><i class="icon-power3"></i><span data-i18n="nav.dash.main" class="menu-title">Logout</span></a>
@@ -178,7 +181,7 @@
         </div>
         <div class="content-body"><!-- stats -->
           <br><br>
-          <h2 class="dash-header">Edit Account</h2>
+          <h2 class="dash-header text-fira">Edit Account</h2>
           <span>View your accounts profile</span>
           <br><br>
           <div class="container">
@@ -186,14 +189,28 @@
               <div class="card">
                   <div class="card-body">
                       <div class="card-block">
-                        <h4 class="dash-header">Edit Profile</h4>
-                         <br>
-                        <form action="" method="post">
+
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-pills" id="myTab" role="tablist">
+                          <li class="nav-item" role="presentation">
+                            <button class="btn btn-tab nav-link active" id="home-tab" data-toggle="tab" data-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true"><span class="icon-user"></span> General Information</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="btn btn-tab nav-link" id="profile-tab" data-toggle="tab" data-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false"><span class="icon-recycle"></span> Change Password</button>
+                          </li>
+                        </ul>
+                        
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+
+                          <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+    
+                        <form action="" method="post" class="mt-2">
                             <div class="row">
                                 <div class="col-md-6">
                                   <div class="form-group">
                                       <label for="username" class="form-label"><strong>Username :</strong></label>
-                                      <input type="text" name="username" id="username" class="form-control" value="">
+                                      <input type="text" name="username" id="username" class="form-control" value="" disabled>
                                   </div>
                                 </div>
                                 <div class="col-md-6">
@@ -461,6 +478,49 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="new_password" class="form-label"><strong>New Password</strong></label>
+                                        <input type="password" name="new_password" id="new_password" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="password_confirmation" class="form-label"><strong>Retype Password</strong></label>
+                                        <input type="password" name="password_confirmation" id="password_confirmation" class="form-control">
+                                    </div>
+                                </div>
+                            </div> -->
+                            <div class="row">
+                                <!-- <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="bitcoin_address" class="form-label"><strong>Your Bitcoin Address</strong></label>
+                                        <input type="text" name="bitcoin_address" id="bitcoin_address" class="form-control">
+                                    </div>
+                                </div> -->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="email" class="form-label"><strong>Your E-mail Address</strong></label>
+                                        <input type="email" name="email" id="email" class="form-control" disabled>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <hr>
+                            <div class="form-group">
+                                <label for="current_password" class="form-label"><strong>Current Password</strong></label>
+                                <input type="text" name="current_password" id="current_password" class="form-control">
+                            </div> -->
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-proceed text-white">Save <span class="icon-download"></span></button>
+                            </div>
+                        </form>
+
+                      </div>
+
+                        <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+                          <form action="" method="post" class="mt-2">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
@@ -475,29 +535,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="bitcoin_address" class="form-label"><strong>Your Bitcoin Address</strong></label>
-                                        <input type="text" name="bitcoin_address" id="bitcoin_address" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="email" class="form-label"><strong>Your E-mail Address</strong></label>
-                                        <input type="email" name="email" id="email" class="form-control">
-                                    </div>
-                                </div>
-                            </div>
-                            <hr>
+
                             <div class="form-group">
-                                <label for="current_password" class="form-label"><strong>Current Password</strong></label>
-                                <input type="text" name="current_password" id="current_password" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-proceed text-white">Update</button>
-                            </div>
-                        </form>
+                              <button type="submit" class="btn btn-proceed text-white">Save <span class="icon-download"></span></button>
+                          </div>
+                          </form>
+
+                        </div>
+
+                      </div>
+
                     </div>
                 </div>
             </div>

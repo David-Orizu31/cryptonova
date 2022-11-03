@@ -139,16 +139,19 @@
       <!-- main menu content-->
       <div class="main-menu-content dash-content">
         <ul id="main-menu-navigation dash-list" data-menu="menu-navigation" class="navigation navigation-main">
-          <li class=" nav-item">
+          <li class="nav-item">
             <a href="index.html"><i class="icon-home3"></i><span data-i18n="nav.dash.main" class="menu-title">Dashboard</span></a>
           </li>
           <li class="nav-item">
-            <a href="deposit.html"><i class="icon-money3"></i><span data-i18n="nav.dash.main" class="menu-title">Make Deposit</span></a>
+            <a href="deposit.html"><i class="icon-money3"></i><span data-i18n="nav.dash.main" class="menu-title">Create Investment</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="deposit-history.html"><i class="icon-history2"></i><span data-i18n="nav.dash.main" class="menu-title">Deposit History</span></a>
           </li>
           <li class="nav-item">
             <a href="history.html"><i class="icon-history2"></i><span data-i18n="nav.dash.main" class="menu-title">Transaction History</span></a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a href="withdrawal.html"><i class="icon-money2"></i><span data-i18n="nav.dash.main" class="menu-title">Request Withdrawal</span></a>
           </li>
           <li class="nav-item">
@@ -158,7 +161,7 @@
             <a href="profile.html"><i class="icon-user"></i><span data-i18n="nav.dash.main" class="menu-title">Account Profile</span></a>
           </li>
           <li class="nav-item">
-            <a href="mailto:support@cointxb.com"><i class="icon-commenting-o"></i><span data-i18n="nav.dash.main" class="menu-title">Contact Support</span></a>
+            <a href="mailto:support@zilliqafx.com"><i class="icon-commenting-o"></i><span data-i18n="nav.dash.main" class="menu-title">Contact Support</span></a>
           </li>
           <li class="nav-item">
             <a href="#"><i class="icon-power3"></i><span data-i18n="nav.dash.main" class="menu-title">Logout</span></a>
@@ -178,11 +181,11 @@
         </div>
         <div class="content-body"><!-- stats -->
           <br><br>
-          <h2 class="dash-header">Request Withdrawal</h2>
+          <h2 class="dash-header text-fira">Request Withdrawal</h2>
           <span>Request withdrawal on this screen</span>
           <br>
           <br>
-          <div class="row">
+          <!-- <div class="row">
               <div class="col-xl-4 col-lg-6 col-xs-12">
                   <div class="card">
                       <div class="card-body">
@@ -236,17 +239,17 @@
                     </div>
                 </div>
             </div>
-          </div>
+          </div> -->
           <div class="container">
           <div class="row">
               <div class="card">
                   <div class="card-body">
                       <div class="card-block">
-                        <h4>Request Withdrawal</h4>
+                        <h3 class="text-light-blue">Balance : $0</h3>
                         <br>
                         <form action="" method="post">
                             <div class="row">
-                                <div class="col-md-4">
+                                <!-- <div class="col-md-4">
                                     <div class="form-group">
                                     <label for="currency" class="form-label"><strong>Currency </strong></label>
                                     <select name="currency" id="currency" class="form-control form-select" required>
@@ -254,14 +257,14 @@
                                         <option value="btc">Bitcoin</option>
                                     </select>
                                 </div>
-                                </div>
-                                <div class="col-md-4">
+                                </div> -->
+                                <div class="col-md-6">
                                     <div class="form-group">
                                     <label for="amount" class="form-label"><strong>Amount </strong></label>
                                     <input type="text" name="amount" id="amount" class="form-control" placeholder="Enter Amount">
                                 </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-6">
                                     <div class="form-group">
                                     <label for="address" class="form-label"><strong>Wallet Address </strong></label>
                                     <input type="text" name="amount" id="amount" class="form-control" placeholder="Enter Bitcoin Wallet Address">   
@@ -292,6 +295,38 @@
                 </div>
             </div>
         </div>
+
+        <div class="row">
+          <div class="card">
+            <div class="card-body">
+                <div class="card-block">
+                    <h4 class="text-light-blue">Withdrawal History</h4>
+
+                    <br>
+                    <div class="table-responsive">
+                        <table class="table table-hover table-striped">
+                            <thead class="table-header">
+                                <tr>
+                                    <th>Amount</th>
+                                    <th>Status</th>
+                                    <th>Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="total"><span>Total : </span> <span class="float"><strong>$ 0</strong></span></p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+
     </div>
   </div>
 </div>

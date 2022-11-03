@@ -139,11 +139,14 @@
       <!-- main menu content-->
       <div class="main-menu-content dash-content">
         <ul id="main-menu-navigation dash-list" data-menu="menu-navigation" class="navigation navigation-main">
-          <li class=" nav-item">
+          <li class="nav-item">
             <a href="index.html"><i class="icon-home3"></i><span data-i18n="nav.dash.main" class="menu-title">Dashboard</span></a>
           </li>
           <li class="nav-item">
-            <a href="deposit.html"><i class="icon-money3"></i><span data-i18n="nav.dash.main" class="menu-title">Make Deposit</span></a>
+            <a href="deposit.html"><i class="icon-money3"></i><span data-i18n="nav.dash.main" class="menu-title">Create Investment</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="deposit-history.html"><i class="icon-history2"></i><span data-i18n="nav.dash.main" class="menu-title">Deposit History</span></a>
           </li>
           <li class="nav-item">
             <a href="history.html"><i class="icon-history2"></i><span data-i18n="nav.dash.main" class="menu-title">Transaction History</span></a>
@@ -151,14 +154,14 @@
           <li class="nav-item">
             <a href="withdrawal.html"><i class="icon-money2"></i><span data-i18n="nav.dash.main" class="menu-title">Request Withdrawal</span></a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a href="referral.html"><i class="icon-users2"></i><span data-i18n="nav.dash.main" class="menu-title">My Referrals</span></a>
           </li>
           <li class="nav-item">
             <a href="profile.html"><i class="icon-user"></i><span data-i18n="nav.dash.main" class="menu-title">Account Profile</span></a>
           </li>
           <li class="nav-item">
-            <a href="mailto:support@cointxb.com"><i class="icon-commenting-o"></i><span data-i18n="nav.dash.main" class="menu-title">Contact Support</span></a>
+            <a href="mailto:support@zilliqafx.com"><i class="icon-commenting-o"></i><span data-i18n="nav.dash.main" class="menu-title">Contact Support</span></a>
           </li>
           <li class="nav-item">
             <a href="#"><i class="icon-power3"></i><span data-i18n="nav.dash.main" class="menu-title">Logout</span></a>
@@ -178,7 +181,7 @@
         </div>
         <div class="content-body"><!-- stats -->
           <br><br>
-          <h2 class="dash-header">My Referrals</h2>
+          <h2 class="dash-header text-fira">My Referrals</h2>
           <span>View all your referrals</span>
           <br><br>
           <div class="container">
@@ -186,41 +189,57 @@
               <div class="card">
                   <div class="card-body">
                       <div class="card-block">
-                        <h4 class="dash-header">My Referals</h4>
+                        <h4 class="dash-header text-light-blue">My Referals</h4>
                         <br>
                         <div class="row">
-                            <div class="col-sm-3">
+                            <div class="col-lg-2 col-md-3 col-xs-4">
                               <h5>Referrals :</h5>
                             </div>
-                            <div class="col-sm-9">
+                            <div class="col-lg-10 col-md-9 col-xs-8">
                                 <h5>0</h5>
                             </div>
                         </div>
                        <br>
                         <div class="row">
-                            <div class="col-sm-3">
+                            <div class="col-lg-2 col-md-3 col-xs-4">
                               <h5>Referrer :</h5>
                             </div>
-                            <div class="col-sm-9">
+                            <div class="col-lg-10 col-md-9 col-xs-8">
                               <h5>Not Specified</h5>
                             </div>
                         </div>
                         <br>
                         <div class="row">
-                            <div class="col-sm-3">
+                            <div class="col-lg-2 col-md-3 col-xs-4">
                               <h5>Referral Link :</h5>
                             </div>
-                            <div class="col-sm-9">
+                            <div class="col-lg-10 col-md-9 col-xs-8">
                                 <div class="row">
-                                    <div class="col-sm-9 form-group">
-                                    <input type="text" class="form-control" id="myInput" value="https://www.cointxb.com/register?ref=6e4db4ac-a6cd-11ea-b57f-88d7f6977c56" aria-label="Recipient's username" aria-describedby="basic-addon2" readonly>
+                                    <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="myInput" value="https://www.zilliqafx.com/register?ref=6e4db4ac-a6cd-11ea-b57f-88d7f6977c56" aria-label="Recipient's username" aria-describedby="basic-addon2" readonly>
                                 </div>
-                                    <div class="col-sm-3 form-group">
-                                      <button class="btn btn-outline-secondary" type="button" onclick="copied()">Copy</button>
+                                    <div class="col-sm-2">
+                                      <button class="btn btn-proceed text-white copy-btn" type="button" onclick="copied()">Copy</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <br>
+                        <div class="row">
+                          <div class="col-lg-2 col-md-3 col-xs-4">
+                            <h5>Referral ID :</h5>
+                          </div>
+                          <div class="col-lg-10 col-md-9 col-xs-8">
+                              <div class="row">
+                                  <div class="col-sm-10">
+                                  <input type="text" class="form-control" id="refid" value="6e4db4ac-a6cd-11ea-b57f-88d7f6977c56" aria-label="Recipient's username" aria-describedby="basic-addon2" readonly>
+                              </div>
+                                  <div class="col-sm-2">
+                                    <button class="btn btn-proceed text-white copy-btn" type="button" onclick="copied2()">Copy</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
                     </div>
                 </div>
             </div>
@@ -243,6 +262,20 @@ Swal.fire({
                 icon: 'success',
                 title: 'Success',
                 text: "Referral Link : " + copyText.value + " Copied",
+
+            });
+}
+
+function copied2() {
+  var copyText = document.getElementById("refid");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+//   alert("Copied id: " + copyText.value);
+Swal.fire({
+                icon: 'success',
+                title: 'Success',
+                text: "Referral ID (Invitation Code) : " + copyText.value + " Copied",
 
             });
 }
